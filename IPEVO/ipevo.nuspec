@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Copyright © 2018 IPEVO Inc.</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>http://files.ipevo.com/download/doc/presenter/presenter_agreement.pdf</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://ipevoinc.zendesk.com/hc/en-us/sections/200711324-IPEVO-Presenter-for-Mac-PC</docsUrl>
 
     <tags>ipevo presenter</tags>
