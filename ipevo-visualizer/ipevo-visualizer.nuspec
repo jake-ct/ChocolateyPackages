@@ -6,6 +6,7 @@
     <owners>hartmch</owners>
      <title>ipevo-visualizer</title>
     <authors>IPEVO</authors>
+    <packageSourceUrl>https://github.com/hartmch/ChocolateyPackages/tree/master/ipevo-visualizer</packageSourceUrl>
     <projectUrl>https://www.ipevo.com/ipevo_visualizer</projectUrl>
     <iconUrl>http://cdn.rawgit.com/hartmch/master/icons/ipevo-visualizer.png</iconUrl>
     <copyright>2018</copyright>
