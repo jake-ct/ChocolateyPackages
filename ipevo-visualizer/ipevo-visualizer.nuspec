@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ipevo-visualizer</id>
+    <version>1.5.0.500</version>
+    <owners>hartmch</owners>
+     <title>ipevo-visualizer</title>
+    <authors>IPEVO</authors>
+    <projectUrl>https://www.ipevo.com/ipevo_visualizer</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/hartmch/master/icons/ipevo-visualizer.png</iconUrl>
+    <copyright>2018</copyright>
+    <tags>ipevo-visualizer ipevo visualizer</tags>
+    <summary>Enhance your document camera experience with IPEVO newly developed IPEVO Visualizer software! IPEVO Visualizer features an intuitive UI that makes it simple to use.</summary>
+    <description>Enhance your document camera experience with IPEVO newly developed IPEVO Visualizer software! IPEVO Visualizer features an intuitive UI that makes it simple to use. Plus, with its compatibility across different operating systems and handy tools such as Rotate, Mirror, Resolution selection, Exposure adjustment, Video Filters, Snapshot, Video Recording, and many more, you’re sure to enjoy the full benefit of your document camera!
+
+To learn more about the features offered by IPEVO Visualizer, please visit: https://www.ipevo.com/ipevo_visualizer</description>
+<releaseNotes>    Version: 1.5.0.5
+Date: 2018-08-01
+
+1. Stop Motion feature added (only compatible with Windows 10 and above).
+2. Minor bugs fixed.</releaseNotes>
+
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
