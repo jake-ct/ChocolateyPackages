@@ -4,16 +4,16 @@
     <id>ipevo-visualizer</id>
     <version>1.5.0.500</version>
     <owners>hartmch</owners>
-     <title>ipevo-visualizer</title>
+    <title>IPEVO Visualizer</title>
     <authors>IPEVO</authors>
     <packageSourceUrl>https://github.com/hartmch/ChocolateyPackages/tree/master/ipevo-visualizer</packageSourceUrl>
     <projectUrl>https://www.ipevo.com/ipevo_visualizer</projectUrl>
     <iconUrl>http://cdn.rawgit.com/hartmch/master/icons/ipevo-visualizer.png</iconUrl>
-    <copyright>2018</copyright>
+    <copyright>Copyright © 2018 IPEVO Inc.</copyright>
     <tags>ipevo-visualizer ipevo visualizer</tags>
+    <licenseUrl>http://files.ipevo.com/download/doc/visualizer/visualizer_agreement.pdf</licenseUrl>
     <summary>Enhance your document camera experience with IPEVO newly developed IPEVO Visualizer software! IPEVO Visualizer features an intuitive UI that makes it simple to use.</summary>
     <description>Enhance your document camera experience with IPEVO newly developed IPEVO Visualizer software! IPEVO Visualizer features an intuitive UI that makes it simple to use. Plus, with its compatibility across different operating systems and handy tools such as Rotate, Mirror, Resolution selection, Exposure adjustment, Video Filters, Snapshot, Video Recording, and many more, you’re sure to enjoy the full benefit of your document camera!
-
 To learn more about the features offered by IPEVO Visualizer, please visit: https://www.ipevo.com/ipevo_visualizer</description>
 <releaseNotes>    Version: 1.5.0.5
 Date: 2018-08-01
