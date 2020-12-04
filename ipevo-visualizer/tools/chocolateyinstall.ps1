@@ -1,22 +1,23 @@
 
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$win10version = [System.Version]::Parse("10.0.10240")
 $win7sp1version = [System.Version]::Parse("6.1.7601")
 $version = [System.Version]$env:OS_VERSION
 Write-Output($version)
-#url for Windows 8+
-if ($version.Build -gt $win7sp1version.Build) { 
-  Write-Output("Windows 8+")
-  $url        = 'https://s3-us-west-1.amazonaws.com/files.ipevo.com/download/driver/Visualizer/Visualizer_win8-10_1.5.0.5.msi.zip'
-  $checksum   = 'CAB1996A326E053AAB44ECEA8EC0D11B9B4877945D2DFBF4B3B1C175E0823900'
-  $fileLocation = Join-Path $toolsDir 'Visualizer_win8-10_1.5.0.5.msi'
+#url for Windows 10+
+if ($version.Build -ge $win10version.Build) { 
+  Write-Output("Windows 10+")
+  $url        = 'https://ipevo-api-cms.s3-us-west-1.amazonaws.com/software/visualizer/download/Windows_10/Visualizer_win10_v2.1.373.0.msi.zip'
+  $checksum   = 'C22336B8630257FCEA0AE1AB0CCFF03B5E7B1C69F1688D0BDA1D1FD46B2E6CB2'
+  $fileLocation = Join-Path $toolsDir 'Visualizer_win10_v2.1.373.0.msi'
 } 
-#if Windows 7 SP1
-elseif ($version.Build -eq $win7sp1version.Build -and $version.Major -eq $win7sp1version.Major) {
-  Write-Output("Windows 7 SP1")
-  $url        = 'https://s3-us-west-1.amazonaws.com/files.ipevo.com/download/driver/Visualizer/Visualizer_win7_1.5.0.5.msi.zip'
-  $checksum   = '63909A497DD684A790082E3A4C9206A23AD5AB09C16478FE29BE3F79BE53942C'
-  $fileLocation = Join-Path $toolsDir 'Visualizer_win7_1.5.0.5.msi'
+#if Windows 7-8
+elseif ($version.Build -ge $win7sp1version.Build -and $version.Build -lt $win10version.Build) {
+  Write-Output("Windows 7-8")
+  $url        = 'https://ipevo-api-cms.s3-us-west-1.amazonaws.com/software/visualizer/download/Windows_7-10/Visualizer_win7-10_v1.14.289.0.msi.zip'
+  $checksum   = '9B42BDF1C65336378280173F7439A2972AE8A9E74F7BECA6810F225C1FAA98D3'
+  $fileLocation = Join-Path $toolsDir 'Visualizer_win7-10_v1.14.289.0.msi'
 } else {
   Write-Output("NOT a supported OS version")
   return
